@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <!-- give langauage hindi,english,spanish etc -->
+<html lang="en">
+<!-- give langauage hindi,english,spanish etc -->
 
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <!-- // for special characters,emoji,content -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body 
-style="background-size:cover"
- bgcolor="black"
- text="grey"
- align="center"
- background="https://www.internationalkhabar.com/wp-content/uploads/2024/01/Parasnath-Hill-A-Majestic-Pilgrimage-and-Natural-Wonder.jpg"
->
+<body style="background-size:cover; background-attachment: fixed ;" bgcolor="black" text="black" align="center"
+    background="https://www.internationalkhabar.com/wp-content/uploads/2024/01/Parasnath-Hill-A-Majestic-Pilgrimage-and-Natural-Wonder.jpg">
 
     <!-- //tag without content tags 
     // tag with content  -> element
@@ -105,18 +100,110 @@ style="background-size:cover"
                           // br we rare used pre not used hr we used  css is manage   
             -->
 
-             <h1 style="color: aliceblue; font-size:90px; margin-top: 10%; font-family: &quot;Segoe UI&quot;, Tahoma, Verdana, Geneva, Tahoma, sans-serif; 
+    <h1 style="color: aliceblue; font-size:90px; margin-top: 10%; font-family: &quot;Segoe UI&quot;, Tahoma, Verdana, Geneva, Tahoma, sans-serif; 
              text-shadow: 5px 3px  0px black; ">Mountain talks, some time.</h1>
-             <!-- <h2>This is heading - h2</h2>
-             <h3>This is heading - h3</h3>
-             <h4>This is heading - h4</h4>
-             <h5>This is heading - h5</h5>
-             <h6>This is heading - h6</h6> -->
+    <!-- <h2>This is heading - h2</h2>
+    <h3>This is heading - h3</h3>
+    <h4>This is heading - h4</h4>
+    <h5>This is heading - h5</h5>
+    <h6>This is heading - h6</h6> -->
+    <p>A mountain is an elevated portion of the surface of a planet, generally with steep sides that show significant
+        exposed bedrock. Although there are no universally accepted definitions, a mountain is usually considered higher
+        than a hill. By definition, mountains are often thought of as being a landform which is higher than 2,000 feet
+        (610 m).[1] It may either have a limited summit area or be a smaller plateau with high elevation and steep
+        sides. A few mountains are isolated summits, but most occur in mountain ranges.</p>
+
+    <pre>
+        This is
+        
+        
+
+                      all about
+                                 
+
+                                   Mountain
+    </pre>
 
 
-             <p></p>
-             <p></p>
 
+
+    <hr color="black">
+    <h2>Character formatting Tags</h2>
+    <p>This is <b>bolder</b></p>
+    <p>This is <Strong>Stronger</Strong> text</p>
+    <p>Thsi is <i>Italic</i> text</p>
+    <p>This is <em>Emphesized</em> text</p>
+    <p>This is <u>Underlined</u> text</p>
+    <p>This is <ins>Inserted</ins> text</p>
+    <p>This is <big>Bigger</big> text</p>
+    <p>This is <samll>Small</samll> text</p>
+    <p>This is <q>Quoted</q> text</p>
+    <p>
+        (a+b)<sup>
+            <samll>3</samll>
+        </sup>=a<sup><small>3</small></sup>
+        +b<sup><small>3</small></sup>
+        >+3ab(a+b)
+    </p>
+    <p>
+        Na<sub><Small>2</Small></sub>
+        CO<sub><small>3</small></sub>
+    </p>
+
+    <p>This is <mark>Highlighted</mark> text</p>
+
+    <p><Strike>MRP. &#8377;1,49,990.00</Strike></p> <!-- del also used only price cut-->
+    <p>Deal Price: &#8377; 1,29,999.00</p>
+
+    <!-- Abbrevivation -->
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+    <hr color="black">
+
+    <!--  <code>Console.log</code> unnecessary  -->
+
+    <h2>Special Tags</h2>
+    <!-- Bi-directional Override -->
+    <bdo dir="rtl">Jspiders BTM</bdo>
+    <details>
+        <summary>Jspiders BTM</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam nobis, delectus, laudantium veniam
+            officia esse minus placeat repellendus laborum ab quae quos sunt doloribus voluptate dolorum quisquam neque
+            ipsum ipsa omnis. Eveniet, cumque. Ad, quas. Aut, nihil eveniet dignissimos magni minima blanditiis, nostrum
+            adipisci vero assumenda excepturi in esse?</p>
+    </details>
+
+    <progress style="width:100%" max="100" value="89" id="download"></progress>
+    <script>
+        let loadEle = document.getElementById("download")
+        let progress = 0;
+        setInterval(() => {
+            loadEle.value = progress++;
+        }, 30)
+    </script>
+
+    <!-- Division tag: used to describe a division or section in the web page, it holds any content 
+                inside it. It is block element  -->
+    <div style="height:300px; width:250px; background-color: gainsboro;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ab nesciunt quod excepturi odio quidem.
+        </p>
+    </div>
+
+    <!-- span: used to select content inside the main tags. It is inline element.-->
+    <h1 style="font-size: 100px;">
+        <span style="color: orange">J</span>
+        <span style="color:lime">S</span>
+        <span style="color: indigo;">P</span>
+        <span style="color:magenta">I</span>
+        <span style="color:red">D</span>
+        <span style="color:palegreen">E</span>
+        <span style="color:rgb(18,188,255)">R</span>
+        <span style="color:olivedrab">S</span>
+    </h1>
+
+    <convas></convas>
+    <!--Scalar  Vector Graphic-->
+
+    <svg></svg>
 
 </body>
 
