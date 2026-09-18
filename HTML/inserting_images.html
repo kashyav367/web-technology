@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- 💠 🏹 
-       Inserting images
+       💠 Inserting images
      -> To insert image, use <img> tag.
      -> It is a single tag, void element
      -> It is inline element
@@ -22,7 +22,25 @@
           3.height & width - px, %.
           4.title
 
+        💠 Picture
+            -> To insert responsive image according to the different device <picture> tag will used
+            -> It is paired tag, containes <source> that defines different sources to different devices. 
+            -> Syntax: 
+            <picture> 
+               <source media="" srcset="" >
+               <source media="" srcset="" >
+               <source media="" srcset="" >
+               <img src="" alt="">
+            </picture>   
    -->
+
+    <!-- IMP INTERVIEW QUESTION 
+          1. HOW TO MAKE IMAGE AS RESPONSIVE 
+          2.HOW TO INSERT RESPONSIVE IMAGE 
+          USING <PICTURE>
+          3. DIFFERENCE BETWEEN IMAG AND PICTURE ?  
+    -->
+
 
    <!-- 1. By using name -->
     <img src="/crane.jpg" alt="crane" height="400px">
@@ -30,5 +48,72 @@
     <!--2. By using path -->
     <img src="./assets/images/Mac.jpg" alt="Mac"  height="400px">
     <img src="./assets/images/flowers.jpg" alt="flowers" height="400px">
+
+    <!--By using URL--  (pixels -> is always static unit also how to make image responsive whatever devices 100% out of 70% and height:auto and width:70% --> 
+    <img src="https://images.pexels.com/photos/38987592/pexels-photo-38987592.jpeg" alt=""  width="70%" height="auto" />
+    
+    <hr color="red" />
+    <picture>
+       <!--Mobile device -->
+       <source media="(max-width:425px)"  srcset="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202609/volkswagen-mission-efficiency-143416839-16x9_0.jpg?VersionId=zWlm1Urdey7J0lzpGD3HHrhH0lVpwgT_" width="90%"/>
+
+           <!--Tablet -->
+       <source media="(min-width:425px) and (max-width:768px)" srcset="https://gomechanic.in/blog/tata-motors-planning-4-new-car-launches-2020/" width="90%"/>
+
+           <!--laptop-->
+       <source media="(min-width:768px) and (max-width:1024px)" srcset="https://www.magnetomagazine.com/app/uploads/2025/08/Lamborghini-Fenomeno-Ambient-Horizontal-Front-640x416.jpg" width="60%"/>
+       
+           <!--Default -->
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-zo9-x2rHzVg0yBmdtQ4ZWhVCcCDd5PdYEQ5_sGIpbS8R3GXFz7BCkk&s=10" alt="" width="90%"  />
+    </picture>
+
+    <hr>
+    <h2>Inserting Video</h2>
+    <!--
+      💠 Inserting Video
+            -> <video> tag is used to insert video into the web page.
+            -> It is paired tag, hold the content to display an error message when 
+            browser is not supporting
+            -> It doesm't support to insert youtube videos.
+            -> Syntax 
+            <video src="">Video not supported by browser </video>
+            -> Attributes
+               1.src
+               2.autoplay
+               3.muted
+               4.controls
+               5.loop
+               6.poster 
+
+    -->
+          <video 
+          src="https://www.pexels.com/download/video/38459350/" 
+          width="90%" 
+          autoplay
+          muted
+          controls
+          poster="https://images.pexels.com/photos/31066335/pexels-photo-31066335.jpeg"
+          >
+          Video not supported by browser  
+        </video> 
+        
+        
+          <!-- 💠 Inserting Audio
+            -> <audio> tag is used to insert audio file into the web page.
+            -> It is paired tag, hold the content to display an error message when 
+            browser is not supporting
+            -> Syntax 
+            <audio src="">Audio not supported by Browser </audio>
+            -> Attributes
+               1.src
+               2.muted
+               3.controls
+               4.loop     
+               
+               -->
+
+               
 </body>
 </html>
+
+<!-- only content  prepare notes tomorrrow- sir will check->
