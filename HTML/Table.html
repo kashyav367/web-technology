@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       ☯  Table
+              -> Arranging data into rows and column is known as table.
+              -> HTML allows the developers to create table by using <table>, <tr>, <th>, <td>
+              -> Syntax; 
+                 <table>
+                     <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                     </tr>  
+                     <tr>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                     </tr>  
+                 </table>     
+
+            -> Attribute: 
+                 1. border -  Applies border to the table.
+                 2. cellPading - Add space inside the cell.
+                 3. cellspacing - Add space between the cell.
+                 4.height & width
+                 5.align - left, center and right
+                 5.rowspan -  Expands column cells.
+                 6.colspan - Expands row cells       
+                 7.style
+                     => border-collapse : collapse
+                     => text-align 
+    -->
+
+    <!-- <table border="1" cellpadding="10" cellspacing="12" > -->
+        <table 
+        border="1"
+        height="300px"
+        width="60%"
+        align="center"
+        style="border-collapse: collapse; text-align: center" 
+        bgcolor="lightgray">
+       <tr>
+        <th>PNR NO.</th>
+        <th>Passenger Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Train No.</th>
+        <th>Coach</th>
+        <th>Seat No.</th>
+        <th>From </th>
+        <th>To</th>
+       </tr>
+
+       <tr>
+        <td>4587213690</td>
+        <td>Rahul Sharma</td>
+        <td>28</td>
+        <td>Male</td>
+        <td>12627</td>
+        <td>S2</td>
+        <td>34</td>
+        <td>Bengaluru</td>
+        <td>Delhi</td>
+       </tr>
+
+       <tr>
+        <td>4587213691</td>
+        <td>Priya Patel</td>
+        <td>24</td>
+        <td>Female</td>
+        <td>16591</td>
+        <td>B1</td>
+        <td>18</td>
+        <td>Mysuru</td>
+        <td>chennai</td>
+       </tr>
+       
+        <tr>
+        <td>4587213692</td>
+        <td>Amit Kumar</td>
+        <td>28</td>
+        <td>Male</td>
+        <td>12028</td>
+        <td>A2</td>
+        <td>12</td>
+        <td>Delhi</td>
+        <td>Mumbai</td>
+       </tr>
+
+       <tr>
+        <td>4587213693</td>
+        <td>Sneha Reddy</td>
+        <td>29</td>
+        <td>Female</td>
+        <td>12028</td>
+        <td>S5</td>
+        <td>46</td>
+        <td>Hyderabad</td>
+        <td>Mysuru</td>
+       </tr>
+
+        <tr>
+        <td>4587213694</td>
+        <td>Kiran Rao</td>
+        <td>50</td>
+        <td>Female</td>
+        <td>16215</td>
+        <td>B2</td>
+        <td>40</td>
+        <td>Bengaluru</td>
+        <td>kochi</td>
+       </tr>
+
+    </table>
+</body>
+</html>
