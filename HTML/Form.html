@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM </title>
+</head>
+<body>
+        <!--
+          ☯  Form
+              -> Forms are used to collect data from user.
+              -> HTML allows the developer to create form using <form></form>
+              -> We can create login, sign in, registration, sign up, payment etc...
+              -> We can collect text, password, number, email, url, files,date,time,color by provide
+              controls like buttons, radio button, checkbox and dropdown menus.
+              -> Form can aligned by creating it using table without css.
+              -> Syntax : 
+                    <form action="" method=""> // method will be wither get and post 
+                        Form element
+                    </form>   
+
+
+             -> Form elements
+            1.label:
+               - used to identify input fields.
+               - Syntax: 
+                    <label for=""> Content </label>
+                  
+            2.input: 
+               - used to collect different types of input data from the user, by changing "type"
+               attribute.
+               - Unpaired and inline element
+               - Syntax: 
+                    <input type="" name="" id="">
+               - Attributes: 
+                    1.type : Accepts different input - text, password, etc..
+                    2. name : Identifies the field to send data to backend
+                    3.id : Identification of input element.
+                    4. placeholder: Given text format identification to field. 
+                    5.minlength: Defines minimum character entered into the field
+                    6.maxlength: Decide the maximum number of characters into the field
+                    7.value :  Holds the input values entered by user.
+                    8. required: Make the input field as mandatory.
+                    9. disabled : disables input field from entering value
+                    10. readonly : Cant enter the value, but can read.
+                    11. checked : Used to select radio button and checkbox default.
+                    12.pattern : Provides regular expression pattern to particular input.
+                    13.autofocus : Selects input to add value default
+        -->
+
+        <label for="firstname">Enter your first name: </label>
+        <input type="text" name="firstName"  id="firstName"  autocorrect placeholder="e.g Jspiders"
+         minlength="6" maxlength="10" required readonly disabled
+
+     
+         />
+
+             <!-- value="Hello"  -->
+
+             <!-- readonly disabled its not mandatory its need then we use -->
+
+</body>
+</html>
