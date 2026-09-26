@@ -46,18 +46,100 @@
                     11. checked : Used to select radio button and checkbox default.
                     12.pattern : Provides regular expression pattern to particular input.
                     13.autofocus : Selects input to add value default
+
+                 * Radio button: 
+                     => Allows user to choose limited options i.e one at a time.
+                     => Example : Choosing gender, Choosing IT domain, payment modes in E-commerce   
+
+                * Check Box: 
+                     => Allows the user to select more than 1 option
+                     => Example: Selecting Skills, Selecting preferred location
         -->
 
         <label for="firstname">Enter your first name: </label>
-        <input type="text" name="firstName"  id="firstName"  autofocus placeholder="e.g Jspiders"
-         minlength="6" maxlength="10" required readonly disabled
-
-     
+        <input 
+        type="text" 
+        name="firstName"  
+        id="firstName"  
+        autofocus 
+        placeholder="e.g Jspiders"
+         minlength="6" 
+         maxlength="10" 
+         required 
+         readonly 
+         disabled
          />
 
              <!-- value="Hello"  -->
 
              <!-- readonly disabled its not mandatory its need then we use -->
 
+        </br></br>
+         <label for="">Enter password: </label>  
+         <input type="password" name="" id=""/> <br /> <br />
+          <input type="color" name="" id=""/> <br /> <br />
+           <input type="date" name="" id=""/> <br /> <br />
+            <input type="datetime" name="" id=""/> <br /> <br />
+            <input type="datetime-local" name="" id=""/> <br /> <br />
+          <input type="email" name="" id=""/> <br /> <br />
+           <input type="file" name="" id="" accept=".pdf, .docs, .xls"/> <br /> <br />
+            <input type="month" name="" id=""/> <br /> <br />
+               <input type="number" name="" id=""  step="2" max="10" min="2"/> <br /> <br />
+          <input type="range" name="" id="" max="100" value="90"/> <br /> <br />
+           <input type="search" name="" id=""/> <br /> <br />
+            <input type="tel" name="" id=""/> <br /> <br />
+        <input type="url" name="" id=""/> <br /> <br />
+
+        <hr>
+
+        <!--Radio button -->
+        <p>Choose payment mode</p>
+        <input type="radio" id="e-wallet"  name="payment" /><label for="e-wallet">E-wallet</label><br/><br/>
+        <input type="radio" name="payment" id="" /><label for="">Net Banking</label> <br/><br/>
+        <input type="radio" name="payment" id=""><label for="">Debit/ Credit card</label> <br/><br/>
+        <input type="text" name="" id="" placeholder="XXXX-XXXX-XXXX-XXXX" disabled /><br /> <br />
+        <input type="radio" name="payment" id="" checked/> <label for="">UPI</label> <br/><br/>
+        <input type="text" name="upi" id="" placeholder="username@ybi" disabled/> <br/><br/>
+        <input type="radio" name="payment" id="" /> <label for="">COD</label>
+
+
+        <!--Checkbox-->
+        <p>Select your preferred location</p>
+        <input type="checkbox" name="" id="" value="blr" checked><label for="">Bengaluru</label>
+        <input type="checkbox" name="" id="" value="hyd"><label for="">Hyderabad</label>
+        <input type="checkbox" name="" id="" value="chn"><label for="">Chennai</label>
+        <input type="checkbox" name="" id="" value="noi"><label for="">Noida</label>
+        <input type="checkbox" name="" id="" value="pune"><label for="">Pune</label>
+
+        <hr>
+        <!--Dropdown menu-->
+        <p>Choose your Boarding point</p>
+        <select name="" id="">
+            <option value="">--Choose Here --</option>
+            <option value="kor">kormangla</option>
+            <option value="bt">BTM</option>
+            <option value="jay">Jaydev hospital</option>
+            <option value="elec">Electronic city</option>
+        </select>
+
+        <!--data list-->
+        <input type="search" name="" id="" list="shopping" placeholder="Serach here ...." />
+        <datalist id="shopping">                 
+            <option value="Bottle">
+            <option value="Shoes">
+            <option value="Marker">
+            <option value="Marker">
+            <option value="Jacket" >    
+        </datalist>
+
+        <!--DIFF btn dropdoemmenu we can change and datalist we can change-->
+        <!-- connection if we hade not this then its a simple text -->
+
+        <pre>
+
+
+        </pre>
 </body>
 </html>
+
+<!--Monday test-- 50 ques>
