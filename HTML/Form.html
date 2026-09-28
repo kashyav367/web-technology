@@ -58,7 +58,7 @@
                  *  Dropdown/Combo box
                     => <select> tag allows developer to create dropdown and <option> allows to create menu. 
                     => It facilitates user to select one option from displayed menu.
-                    => option are predefined, that can't modified later,  can't enter user defined values.
+                    => option are predefined, that can't modified later and can't enter user defined values.
                     => Example: Selecting country, state, district, YOP , etc..
                     => Syntax :
                         <select> 
@@ -69,8 +69,29 @@
                         </select>
                 * Attributes: 
                       1.hidden : hides an option from the list, so user cant choose it.
-                      2.selected : selects an option defaultly         
+                      2.selected : selects an option defaultly
+
+                 * Datalist: 
+                      => It allows user to select predefined options as well as user can enter value.
+                      =>  <input> is used to enter value and <datalist> with <option> defines the datalist 
+                           datas.
+                      =>Example : Searching products in E-Commerce app.
+                      => Syntax : 
+                           <input type="text" id="list_name  name="" >
+                           <datalist list="list_name">
+                               <option value=""> 
+                               <option value=""> 
+                               <option value=""> 
+                            </datalist>
+
+                 * Textarea : 
+                       => Textarea allows user to enter long text . 
+                       => <textarea> used to accept long text.
+                       => Example: feedback, comments, prompts, reviews, etc. 
+                       => Syntax: 
+                              <textarea id="" name="" cols="" rows="" ></textarea>           
         -->
+                              
 
         <label for="firstname">Enter your first name: </label>
         <input 
