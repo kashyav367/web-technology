@@ -47,3 +47,34 @@
                  painting
                  ↓
                  composition
+
+
+     * Types of CSS
+         1. Inline CSS:
+               -> Writing css property by using "style" attribute into the html element.
+               -> Syntax: 
+                   <h1 style="color:'blue'; font-size: '30px'"></h1> 
+               -> Advantages:
+                    => Good for small changes.
+                    => It is having high priority.
+               -> Disadvantages:
+                     => It is required to apply for each and every html element.
+                     => Not reusable.
+
+         2.Internal CSS: 
+              -> Writing the css property inside <style> tag in the HTML Document.
+              -> Advantages :
+                  >> Reusable
+                  >> Easy to access
+                  >> Better for single pages.
+              -> Disadvantages:
+                  >> Can't reuse across multiple pages.
+
+          3.External CSS: 
+               -> keeping styling property in separate CSS file.
+               -> Can be connected to html using <link> tag.
+               -> Advantages :
+                    >> Can be used across multiple web pages.
+                    >> Most recomended
+                    >> Easy to maintain.     
+
