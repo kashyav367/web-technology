@@ -1,0 +1,49 @@
+<!--
+    CSS
+    * Stands for Cascading style Sheet
+    * Used to increase standards and overall look of web page to make it presentable.
+    * With CSS user can understand the web page content easily by making UI as rich.
+    * History:
+          -> CSS invented in W3C(consortism) on 17th dec,1996 by Hakon Wiem Lie
+
+    * Uses
+        -> Improves looks.
+        -> Separates content and design.
+        -> Maintains consistancy across multiple pages.
+        -> Makes web pages as responsive for different types of devices(mobiles,tablets,laptop).
+        -> Reduce code duplication .
+        -> Adds visuals effects like animation, transition, transformation.
+
+    * How to use CSS?
+        selector {
+            prop : value;
+        }   
+           -> Selector: Targetting HTML elements by using its name, id , class.
+           -> Declaration block contains one or more CSS declaration separated by ";".
+           -> One declaration contains css property name and value separated by ":"
+           -> We cant write duplicate css property in same declaration block, if it is so always last occurance
+              will executes (** overides)
+
+     * How CSS Works 
+      -> When CSS loaded into the browser, tree like structure called CSSOM (Cascading style sheet object models)
+       will be created after parsing css in browser.
+      -> Just like as the browser converts HTML into a DOM (Document Object Model), it converts CSS into CSSOM.
+      -> Later browser will combines both DOM and CSSOM to create a render tree.   
+
+
+      just for knowledge purpose
+     HTML                     CSS
+       ↓                       ↓
+     HTML parser            CSS parser
+       ↓                      ↓
+     DOM                      CSSOM
+        ↘                     ↙
+          ↘                ↙
+            ↘          ↙
+             Render Tree
+                 ↓
+             Layout(Calculating the size & Position)    
+                 ↓
+                 painting
+                 ↓
+                 composition

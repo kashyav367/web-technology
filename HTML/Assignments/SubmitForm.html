@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-form</title>
+</head>
+<body>
+
+  <form action="/HTML/Assignments/SubmitForm.html" method="get">
+    <h1>Student-Details</h1>
+    <h2>Personal</h2>
+    <label for="firstname">First Name:</label>
+    <input type="text" name="Firstname" id="firstname" 
+
+    placeholder="First Name"/> <br/>
+    <label for="lastname">Last Name:</label> 
+    <input type="text" name="lastname" id="lastname" 
+    placeholder="Last Name"/> <br/>
+    <label for="fathername">Father Name:</label>
+    <input type="text" name="fathername" id="fathername" 
+    placeholder="Father's Name"/> <br/>
+        <label for="fathername">Mother Name:</label>
+    <input type="text" name="mothername" id="mothername" 
+    placeholder="Mother's Name"/> <br/>
+            <label for="date">DOB:</label>
+    <input type="date" name="date" id="date" 
+    placeholder=""/> <br/>
+       <label>Gender:</label>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+    <br/>
+   <label for="blood_group">Blood Group:</label>
+
+<select id="blood_group" name="blood_group">
+  <option value="">-Choose -</option>
+  <option value="A+">A+</option>
+  <option value="A-">A-</option>
+  <option value="B+">B+</option>
+  <option value="B-">B-</option>
+  <option value="AB+">AB+</option>
+  <option value="AB-">AB-</option>
+  <option value="O+">O+</option>
+  <option value="O-">O-</option>
+</select>
+   <hr>
+   <h2>Contact</h2>
+   <label for="Mobile_no.">Mobile no.:</label>
+    <input type="number" name="Mobile_no" id="Mobile_no" placeholder="10 Digits" >
+    <br>
+    <label for="email">Mail id :</label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+    <br>
+    <label for="Line1">Line 1:</label>
+     <input type="text" name="line1" id="line1" placeholder="Line 1">
+     <br>
+     <label for="Line2">Line 2:</label>
+     <input type="text" name="line2" id="line2" placeholder="Line 2">
+     <br>
+    <label for="country">Country :</label>
+<select id="country" name="country">
+  <option value="">- Choose -</option>
+  <option value="india">India</option>
+  <option value="pakistan">Pakistan</option>
+  <option value="saudi_arabia">Saudi Arabia</option>
+  <option value="usa">United States</option>
+  <option value="uk">United Kingdom</option>
+  <option value="canada">Canada</option>
+  <option value="australia">Australia</option>
+  <option value="uae">United Arab Emirates</option>
+</select>
+<br>
+<label for="state">State :</label>
+<select id="state" name="state">
+  <option value="">- Choose -</option>
+  <option value="andhra_pradesh">Andhra Pradesh</option>
+  <option value="arunachal_pradesh">Arunachal Pradesh</option>
+  <option value="assam">Assam</option>
+  <option value="bihar">Bihar</option>
+  <option value="chhattisgarh">Chhattisgarh</option>
+  <option value="goa">Goa</option>
+  <option value="gujarat">Gujarat</option>
+  <option value="haryana">Haryana</option>
+  <option value="himachal_pradesh">Himachal Pradesh</option>
+  <option value="jharkhand">Jharkhand</option>
+  <option value="karnataka">Karnataka</option>
+  <option value="kerala">Kerala</option>
+  <option value="madhya_pradesh">Madhya Pradesh</option>
+  <option value="maharashtra">Maharashtra</option>
+  <option value="odisha">Odisha</option>
+  <option value="punjab">Punjab</option>
+  <option value="rajasthan">Rajasthan</option>
+  <option value="tamil_nadu">Tamil Nadu</option>
+  <option value="telangana">Telangana</option>
+  <option value="uttar_pradesh">Uttar Pradesh</option>
+  <option value="uttarakhand">Uttarakhand</option>
+  <option value="west_bengal">West Bengal</option>
+</select>
+<br>
+   <label for="pincode">Pin Code:</label>
+   <input type="text" name="pincode" id="pincode" placeholder="Pin Code" />
+  <hr>
+  
+  <h2>Education</h2>
+  <label for="degree">Highest Degree:</label>
+  <select id="degree" name="degree">
+    <option value="">- Choose -</option>
+    <option value="Btech">Btech</option>
+    <option value="Mtech">Mtech</option>
+    <option value="Bca">Bca</option>
+    <option value="Mca">Mca</option>
+  </select>
+  <br/>
+   <label for="stream">Stream:</label>
+   <input type="radio" name="Stream" value="Mech">Mech
+   <input type="radio" name="Stream" value="Civil">Civil
+   <input type="radio" name="Stream" value="CS">CS
+   <input type="radio" name="Stream" value="EC">IT
+   <input type="radio" name="Stream" value="IT">EEE
+   <br/>
+   <label for="Other">If Other:</label>
+   <input type="text" name="Other" id="other" />
+   <br/>
+   <label for="">YOP:</label>
+   <select id="yop" name="yop">
+    <option value="">-Choose-</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+     <option value="2026">2026</option>
+   </select>
+   <br/>
+   <label for="university">University</label>
+   <input type="text" name="university" />
+   <br/>
+   <label for="percent">Percentage:</label>
+   <input type="number" name="percent" value="percent"/>
+   
+   <hr>
+
+   <h2>Placement</h2>
+   
+        <label for="skill">Skills:</label>
+        <input type="checkbox" name="" id="" value="HTML" checked><label for="">HTML</label>
+        <input type="checkbox" name="" id="" value="CSS"><label for="">CSS</label>
+        <input type="checkbox" name="" id="" value="JS"><label for="">JS</label>
+        <br/>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="" id="" value="ReactJS"><label for="">ReactJS</label>
+        <input type="checkbox" name="" id="" value="reactnative"><label for="">React Native</label>
+        <input type="checkbox" name="" id="" value="Tailwind"><label for="">Tailwind.Randz</label>
+        <br/>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="" id="" value="NodeJS"><label for="">NodeJS</label>
+        <input type="checkbox" name="" id="" value="ElectronJS"><label for="">ElectronJS</label>
+         <input type="checkbox" name="" id="" value="Redux"><label for="">Redux</label>
+           
+         <br/>
+           <label for="Domain">Domain:</label>
+         <input type="radio" name="Domain" value="Devops">Devops
+           <input type="radio" name="Domain" value="Testing">Testing
+            <input type="radio" name="Domain" value="Dev">Dev
+             <input type="radio" name="Domain" value="Support">Support
+             <br/>
+          <label for="place">Place of Preference:</label>
+         <input type="radio" name="place" value="Hyderbad">Hyderabad
+           <input type="radio" name="place" value="Pune">Pune
+            <input type="radio" name="place" value="Delhi">Delhi
+             <input type="radio" name="place" value="Pan India">Pan India
+             <br>
+             &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+             &nbsp;
+            <input type="radio" name="place" value="Delhi">Bangalore
+             <input type="radio" name="place" value="Pan India">Chennai
+             <br/>
+             <label for="Salary">Expected Salary:</label>
+           <input type="radio" name="salary" value="salary">Less than 3 LPA
+           <input type="radio" name="salary" value="salary">3-6 LPA
+           <br/>
+              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;&nbsp;
+           <input type="radio" name="salary" value="salary">6-10 LPA
+           <input type="radio" name="salary" value="salary">More than 10 LPA
+           <input type="radio" name="salary" value="salary">No Expectation
+        
+        
+        <hr>
+        
+        <h2>Create Account</h2>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"/>
+        <br/>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"/>
+        <br/>
+         <label for="password">Re-Enter:</label>
+         <input type="password" name="password" id="password"/>
+        <br />
+          <br/>
+        <input type="checkbox"/>
+        Agree Terms & Condition
+        <br/>
+        <br/>
+        <button type="submit">Submit</button>
+        <button type="submit">Reset</button>
+        </form>
+
+</body>
+</html>
