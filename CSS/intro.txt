@@ -1,4 +1,4 @@
-<!--
+
     CSS
     * Stands for Cascading style Sheet
     * Used to increase standards and overall look of web page to make it presentable.
@@ -77,4 +77,25 @@
                     >> Can be used across multiple web pages.
                     >> Most recomended
                     >> Easy to maintain.     
+        
 
+        => Box Model 
+             * The CSS Box Model consists of content, padding, border, and margin. It defines the layout and 
+               spacing of elements, and the total size of an element is calculated using these 
+               properties.
+                         Margin 
+                            |_ Border 
+                               |_ padding
+                                  |_ content
+             * Every element = a box of 4 layers:
+                  content -> actual text/image
+                  padding -> space inside the box(around content)
+                  Border  -> edge of the box
+                  Margin  -> space outside the box 
+             * Total Width Calculation 
+                 Total width = content + padding + border + margin
+             * Why it is important 
+                  Controls layout and spacing
+                  Helps avoid design issues
+                  Essential for responsive design.
+                                                 
