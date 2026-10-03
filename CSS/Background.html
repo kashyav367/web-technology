@@ -14,38 +14,50 @@
             /* background-position-x: 200px;
             background-position-Y: -300px; */
             background-position: 0px -300px;
+            background-attachment: fixed;
         } 
-
-        div{
-            height: 300px;
-            width: 600px;
-            background-color: rgba(167, 167, 167,0.576);
-            padding-top: 80px;
-            box-sizing: border-box;
-            text-align: center;
-            margin: 13% 0 0 30%;
-            backdrop-filter: blur(5px);
-            /* filter: blur(10px) */
-            color:white;
-        }
 
         h1{
             font-size: 65px;
-            font-variant: small-caps;
+            font-variant: small-caps;  
             margin: 0;
+            color: #fff4d6;
         }
 
         p{
             font-size: 25px;
+            color:black;
+        }
+
+        span{
+            color: #fc6c26;
+        }
+
+        img {
+            width:80%;
+            margin: 2% 0px 0px 11%;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div style="height:300px; width: 600px;
+       background-color: rgba(167,167,167,0.576);
+       padding-top: 80px; box-sizing: border-box;
+       text-align: center; margin: 13% 0 0 30%;
+       backdrop-filter: blur(5px); color: white;
+    ">
         <h1>Range Rover</h1>
         <p>Range Rover SV Ultra. A rare blend of exquisite
             elements.
         </p>
     </div>
+    <div style="height: 100vh; width: 100%;
+      background-color: #fff4d6; margin-top: 500px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbDE8mXQelUstctezVf9nwFTqg-ZXZBOcAR713yXA7mg&s" alt=""/>
+   
+    </div>
 </body>
 </html>
+
+
+
