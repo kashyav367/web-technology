@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Selectors : 
+    * Selector is an method to target an html element to apply CSS.
+    * Syntax: 
+        selector{
+            css prop
+        }
+    * Types
+        1. Basic Selector 
+            a.Tag Selector ;
+                 -> Targeting an HTML element using its tag name.
+                 -> Syntax : 
+                       tag {
+                          //css prop -- cutt
+                       }
+
+            b.id Selector
+                -> Selecting an HTML element by using attribute "id".
+                -> Used to identify an HTML element by providing unique identification
+                -> Id should't be duplicated
+                -> Uses # to identify element
+                -> Syntax: 
+                   #id_name{
+                     CSS prop
+                   }
+                   <tag id="id_name"></tag>  
+            c. class Selector: 
+                 -> Selecting an HTML element by using "class" attribute.
+                 -> Class can be duplicated and can be used for any number of times.
+                 -> Creating the sub class is allow
+                 -> Uses '.' followed by class name.
+                 -> Syntax: 
+                     .class_name{
+                       //CSS PROP - CUTT
+                     }
+                    <tag class="class_name">Content</tag> 
+            d. Attribute Selector
+            e.Type Selector
+            f.Group Selector
+            g.Universal Selector.
+            
+            
+        2. Combinators 
+           a.Descendant
+           b. Child 
+           c. Adjacent Sibling / Next child
+           d.General Sibling / all child Selectors
+           
+       3. Psuedo-class
+          a.link
+          b.active
+          c.Visited
+          d.hover
+          e.focus
+          f.first-child
+          g.last-child
+          h.nth-child()
+          i.nth-child(even/odd)
+          j.has()
+          k.not()
+          l.checked()
+          m.root
+          
+       4.Psuedo-elements 
+         a.first-letter
+         b.first-line
+         c.before
+         d.after
+         e.Selection
+         f.marker
+         g.placeholder
+    -->
+
+    <style>
+        /* Tag Selector */
+        h1{
+            color: red;
+        }
+
+        /* Id */
+        #heading {
+            color: aqua;
+        } 
+        /* class */
+        .heading-text{
+            color: rgb(129,110,86);
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(193,227,126);
+            text-transform: uppercase;
+        }
+        .sub-text{
+            color: blueviolet;
+        }
+        .normal-text{
+            color: salmon;
+        }
+    </style>
+
+    <!-- Tag selector -->
+     <h1>This is H1 element</h1>
+     
+
+     <!--id selector -->
+     <h1 id="heading-text">This is H1 element</h1>
+
+     <!--class selector -->
+    <h1 class="heading-text">This is H1 element</h1>
+    <h1 class="heading-text sub-text">This is H1 element</h1>
+    <p class="heading-text normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error soluta quaerat similique explicabo et fugiat nostrum dicta, accusantium maiores?</p>
+
+</body>
+</html>
