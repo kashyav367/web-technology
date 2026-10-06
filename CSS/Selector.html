@@ -42,10 +42,31 @@
                        //CSS PROP - CUTT
                      }
                     <tag class="class_name">Content</tag> 
-            d. Attribute Selector
-            e.Type Selector
+            d. Attribute Selector: 
+                 -> Selecting an html element by using its attribute to apply css property.
+                 -> Commonly used in form elements and hyper link selection.
+                 -> Syntax : 
+                        input[attribute="value"]{
+                          
+                        }
+                -> For hyperlink selection starts with - ^, contains - *, endswith- $ */
+                     Example : if url starts with "https:"
+                               a[href^="https:"]{
+                                    color: #FFD51E;
+                                    font-weight: 900;
+                               }
             f.Group Selector
+                 -> Selecting multiple elements to apply common css property, by using operator ','
+                    between selectors
+                 -> Syntax: 
+                      sel1, sel2, sel3, ....{
+                        
+                      }   
             g.Universal Selector.
+                  -> Selects all html element to apply same css property.
+                  -> Uses '*' to select all element.
+                  -> Syntax : 
+                       }
             
             
         2. Combinators 
@@ -80,6 +101,14 @@
     -->
 
     <style>
+
+        /* Universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
         /* Tag Selector */
         h1{
             color: red;
@@ -117,5 +146,77 @@
     <h1 class="heading-text sub-text">This is H1 element</h1>
     <p class="heading-text normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error soluta quaerat similique explicabo et fugiat nostrum dicta, accusantium maiores?</p>
 
+    <hr>
+
+    <style>
+        #user-reg{
+            height: 50vh;
+            width: 30%;
+            background-color: #8B9A6E;
+            margin:10% 0% 0% 35%;
+            text-align: center;
+            padding: 20px;
+            padding-top: 80px;
+            box-sizing: border-box;
+        }
+
+        .user-input{
+            height: 33px;
+            width: 65%;
+            border: 1px solid;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]{
+          background-color: #FFF9DB;
+          border-color: #FF9D50;
+        }
+
+        input[type="password"]{
+            background-color: #FFD51E;
+            border-color: #3E0F8D;
+        }
+
+        input[type="email"]{
+            background-color: #E2B4BD;
+            border-color: #4A4A4A;
+        }
+
+
+        input[type="submit"]{
+            background-color: #00B7CD;
+            border: none;
+            height:35px;
+            width: 150px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        p{
+            color: #D8FFC5;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /* starts with - ^, contains - *, endswith-$*/
+
+        a[href^="https:"]{
+            color: #FFD51E;
+            font-weight: 900;
+        }
+    </style>
+
+    <form action="" id="user-reg">
+        <input type="text" name="" id="" class="user-input" placeholder="username"><br><br>
+         <input type="password" name="" id="" class="user-input" placeholder="password"><br><br>
+          <input type="email" name="" id="" class="user-input" placeholder="mail"><br><br>
+          <input type="submit" value="Submit">
+          <p>Forgot password? <a href="https://qspiders.com/branches/btm-jspiders?branchId=8-branchId">reset </a> here </p>
+
+          </a>
+    </form>
 </body>
 </html>
