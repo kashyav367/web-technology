@@ -11,9 +11,9 @@
             box-sizing: border-box;
         }
 
-        body{
+        /* body{
           /* background-color: gainsboro; */
-        }
+        /* } */ 
 
         .box{
             height: 300px;
@@ -23,22 +23,47 @@
             margin-top: 10%;
         
         /* border */
-        border-width:20px;
+        /* border-width:20px;
          border-color: magenta transparent indigo transparent;
-         border-style: solid;
-
-
+         /* for multiple color use border color*/
+         /* border-style: solid; */ 
+         
+         border:10px indigo solid;
+         /*  it will not add 2 colors*/
+         outline: 10px mediumseagreen solid;
+         outline-offset: -40px;
+         
+         border-radius: 300px 300px 300px 300px;
+         border-radius: 100px 100px;
+         border-radius: 100px;
          border-radius: 50%;
-         animation: load 1s ease-in-out infinite;
+         border-radius: 10% 20% 10% 20%/ 50% 50%;
         }
 
-        @keyframes{
-            
+         button {
+            /*height: 35px;
+            width: 200px; */
+            padding: 12px 60px;
+            margin: 4% 0% 10% 36%;
+            background-color: midnightblue;
+            border: none;
+            color: snow;
         }
+
+         /* animation: load 1s ease-in-out infinite; */
+        /* @keyframes load {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        } */
 
     </style>
 </head>
 <body>
       <div class="box"></div>
+      <button>BUTTON</button>
 </body>
 </html>

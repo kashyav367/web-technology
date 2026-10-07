@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+      ➤ Shadow 
+       ❄ This property is used to apply shadow around the HTML elements.
+       ❄ Types: 
+            1. box-shadow: 
+               -> This is prop is used to apply shadow around boxes, images with background, video.
+               -> Syntax: 
+                    selector{
+                        box-shadow : val1 val2 val3 val4 val5 inset;
+                    }
+                        
+                    * val1: adds shadow at right side, if value(px) is -ve changes its direction to left.
+                    * val2: adds shadow at bottom side, if value(px) is -ve changes its direction to top.
+                    * val3: Scatters the shadow.
+                    * val4: Cover the shadow in all direction.
+                    * val5 : defines shadow color.
+                    * inset : Optional property to apply shadow inside the box.
+           2. drop=shadow
+           3.text-shadow         
+                    
+    -->
+
+    <style>
+        body{
+            background-color: rgb(193,193,255);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .wrapper{
+            height: 350px;
+            width: 350px;
+            margin: auto;
+            margin-top: 10%;
+            background-color: snow;
+        }
+
+        .shadow-two-side {
+            box-shadow: 50px -50px 30px rgba(0, 0, 0, 0.61);
+        }
+
+        .shadow-all-side{
+            box-shadow: 0px 0px 30px 15px rgba(0,0,0);
+        }
+
+        .shadow-multi-layer{
+            box-shadow: 0px 0px 20px 20px lime, 0px 0px 20px 40px magenta, 0px 0px 10px 60px cyan;
+        }
+
+
+    </style>
+
+    <div class="wrapper shadow-two-side"></div>
+    <div class="wrapper shadow-all-side"></div>
+    <div class="wrapper shadow-multi-layer"></div>
+</body>
+</html>
