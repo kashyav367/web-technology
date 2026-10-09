@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+       Gradient
+       * Smooth transition between two or more colors is known as gradient.
+       * Types: 
+          1.Linear-gradient: Combining the colors in linear format i.e side by side in different direction
+              -> Syntax: 
+                   selector{
+                       background : linear-gradient(dir,col1,col2,col3...);
+                   }
+          2.Radial-gradient:
+          3.Conic-gradient:
+    -->
+
+    <style>
+        * {
+            margin: 0;
+        }
+        .wrap{
+            height: 100vh;
+            width: 100%;
+
+        }
+        body{
+            background-image: url(https://images.pexels.com/photos/34598698/pexels-photo-34598698.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .wrap{
+            height: 100vh;
+            width: 100%;
+        }
+        .lg{
+            background: linear-gradient(90deg, cyan, indigo );
+        }
+        .lg2{
+            background: linear-gradient(90deg, burlywood, rebeccapurple );
+        }
+        .lg3{
+            background: linear-gradient(90deg, lavender, transparent);
+            color: beige;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -10%);
+            opacity: 0;
+            animation: pop 2s linear forwards 1s;
+        }
+
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.3rem;
+                transform: scaleX(3);
+                text-align: center;
+                text-decoration: underline;
+            }
+            span{
+                color: cadetblue;
+            }
+            @keyframes pop {
+                from{
+                    opacity : 0;
+                    transform: scaleX(5);
+                }
+                to{
+                    opacity: 1;
+                    transform: scaleX(1);
+                }
+                
+            }
+        
+    </style>
+    <div class="wrap lg"></div>
+    <div class="wrap lg2"></div>
+    <div class="wrap lg3">
+        <div class="text">
+            <h1>Land Rover</h1>
+            <p>Defender</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

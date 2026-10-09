@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+       Opacity:
+          > Applying transparency to an HTML element.
+          > Opacity value lies between 0(invisible) to 1(visible)
+          > syntax:
+              selector{
+                   opacity: value;
+              }
+    -->
+              <style>
+                body{
+                    background: url(https://i.pinimg.com/736x/69/ca/27/69ca270877d03a444b7164058538e5f7.jpg);
+                    background-size: cover;
+                }
+                *{
+                    margin:0;
+                }
+                .strip{
+                    height: 16.66vh;
+                    width: 100%;
+                    background-color: darkslategrey;
+                }
+                .one{
+                    opacity: 0;
+                }
+                .two{
+                    opacity: 0.2;
+
+                }
+                .three{
+                    opacity: 0.4;
+                }
+                .four{
+                    opacity: 0.6;
+
+                }
+                .five{
+                    opacity: 0.8;
+
+                }
+                .six{
+                    opacity: 1;
+                }
+              </style>
+    <div class="strip one"></div>
+    <div class="strip two"></div>
+    <div class="strip three"></div>
+    <div class="strip four"></div>
+    <div class="strip five"></div>
+    <div class="strip six"></div>
+</body>
+</html>
