@@ -16,6 +16,11 @@
                        background : linear-gradient(dir,col1,col2,col3...);
                    }
           2.Radial-gradient:
+                -> Transition of multiple color in circular form.
+                -> Syntax: 
+                     selector{
+                       background : radial-gradient(shape,col1,col2,col3...);
+                     }
           3.Conic-gradient:
     -->
 
@@ -46,6 +51,7 @@
         }
         .lg3{
             background: linear-gradient(90deg, lavender, transparent);
+            /* <!-- left,right,top,bottom,2 left, 2 right 2 top 2 bottom --> */
             color: beige;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             position: relative;
@@ -82,18 +88,58 @@
                 }
                 
             }
+
+            .rg{
+                background: radial-gradient(circle,cyan,indigo,black);
+            }
+
+            .rg-2{
+                background-color: gainsboro;
+                display: grid;
+                place-items: center;
+            }
+
+            .sphere{
+                height: 400px;
+                width: 400px;
+                background: radial-gradient(circle farthest-side at 30% 30%, cyan, black);
+                border-radius: 50%;
+                box-shadow: 100px 150px 40px rgba(0,0,0,0.483);
+            }
+
+            .cg{
+                height:400px;
+                width: 400px;
+                background: conic-gradient(red,lime,yellow,silver,blueviolet,red);
+                border-radius: 50%;
+                animation: rotate 10s linear infinite;
+                filter: blur(20px);
+            }
+
+            @keyframes rotate {
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+
+
         
     </style>
     <div class="wrap lg"></div>
     <div class="wrap lg2"></div>
     <div class="wrap lg3">
         <div class="text">
-            <h1>Land Rover</h1>
+            <h1>Land  <span>Rover</span></h1>
             <p>Defender</p>
         </div>
     </div>
-    
-    
+    <div class="wrap rg"></div>
+    <div class="wrap rg-2">
+    <div class="sphere"></div>
+    </div>
+    <div class="wrap rg-2">
+        <div class="cg"></div>
+    </div>
 </body>
 </html>
 
