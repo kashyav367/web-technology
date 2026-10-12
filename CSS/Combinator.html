@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .sheik,
+        .khan {
+            border: 2px solid;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .sheik {
+            border-color: red;
+        }
+
+        .khan {
+            border-color: green;
+        }
+
+        /* .sheik h1 {
+            color: crimson;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .khan p {
+            color: yellow;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2.5rem;
+        } */
+        /* Child combinator */
+        .khan .next-next-gen>p {
+            color: rgb(20, 200, 220);
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sheik">
+        <h1>This is mustafa from sheik family</h1>
+        <p>This is liya mustafa from sheik family</p>
+        <div class="next-gen">
+            <h1>This is Izaan from sheik family</h1>
+            <p>This is Ziya from sheik family</p>
+            <div class="next-next-gen">
+                <h1>This Izaan's son from sheik family</h1>
+                <p>This is Izaan's daughter from sheik family</p>
+            </div>
+        </div>
+    </div>
+    <div class="khan">
+        <h1>This is mustafa from khan family</h1>
+        <p>This is liya mustafa from khan family</p>
+        <div class="next-gen">
+            <h1>This is Izaan from sheik family</h1>
+            <p>This is Ziya from khan family</p>
+            <div class="next-next-gen">
+                <h1>This Izaan's son from khan family</h1>
+                <p>This is Izaan's daughter from khan family</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <style>
+        .wrap {
+            height: 240px;
+            width: 100%;
+            background-color: lavender;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .wrap img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            margin: 20px;
+        }
+
+        .one img {
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.493);
+        }
+
+        .two img {
+            border-radius: 50%;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.493);
+        }
+    </style>
+    <div class="wrap one">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+    </div>
+    <div class="wrap two">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+        <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+            alt="">
+    </div>
+    <hr>
+    <!-- Ajducent sibling selector -->
+    <style>
+        input:checked+label {
+            color: green;
+            font-weight: 900;
+        }
+    </style>
+    <p>Choose your Gender</p>
+    <input type="radio" name="gender" id="male"><label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+
+    <input type="radio" name="gender" id="others"><label for="others">Others</label>
+    <hr>
+    <!-- general sibling selector
+        -> It selects all html elements which are following after specified selector.
+        -> It uses '~' to combine selectors.
+        -> Syntax:
+            sel1~sel2{
+                CSS Prop
+            }
+    -->
+    <style>
+        p~h3 {
+            color: blueviolet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+    <div class="parent">
+        <p>This is child 1</p>
+        <h3>This is child 2</h3>
+        <h1>This is child 3</h1>
+        <h3>This is child 4</h3>
+        <h1>This is child 5</h1>
+        <h3>This is child 6</h3>
+    </div>
+
+
+    <pre>
