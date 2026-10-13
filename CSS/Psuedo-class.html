@@ -84,6 +84,10 @@
           4.hover : To change the state of HTML element, when user takes cursor over it.
           5.focus: To change the state of HTML element (most likely input) when element gets focus
           // both hover and focus used for user interaction 
+          6.first-child: Selects first available element.
+          7.last-child: Selects last element from selected selector.
+          8.nth-child(): Selects elements based on the number
+          9.nth-child(evem/odd): Selects only even/odd numbered element
 -->
       <style>
         input{
@@ -101,7 +105,43 @@
         border: limegreen;
         box-shadow: 0px 0px 20px 3px rgba(50,205,50,0.777);
         }
+        
       </style>
-      <input type="text" name="" id="" placeholder="Type here.....">      
+      <input type="text" name="" id="" placeholder="Type here.....">     
+
+      <!--First child -->
+      <style>
+        .text > h1:first-child{
+            color: violet;
+            background-color: turquoise;
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .text > h1:last-child{
+            color:blueviolet;
+              background-color: turquoise;
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .text>h1:nth-child(even){
+            color: steelblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 3rem;
+        }
+      </style>
+
+     <div class="text">
+        <h1>This is 1st element</h1>
+         <h1>This is 2nd element</h1>
+          <h1>This is 3rd element</h1>
+           <h1>This is 4th element</h1>
+             <h1>This is 5th element</h1>
+         <h1>This is 6th element</h1>
+          <h1>This is 7th element</h1>
+           <h1>This is 8th element</h1>
+             <h1>This is 9th element</h1>
+     </div>
 </body>
 </html>
