@@ -99,3 +99,21 @@
                   Helps avoid design issues
                   Essential for responsive design.
                                                  
+
+
+
+
+
+        => --------------------
+        Psuedo-class
+        * psuedo classes are used to change the state of whole HTML element.
+        * Can change the state of elements on the basis of links availability, user interaction, position of element
+          on the DOM and more
+        * Syntax:
+             selector: psuedo-class{
+                css prop
+             }   
+        * Types: 
+            1.link : To change the state of unvisited links on the web page.
+            2.visited : To change the status of visited links.
+            3.active : To change the status of active links(When user click and hold on link)                                   

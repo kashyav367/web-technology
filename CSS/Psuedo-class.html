@@ -5,23 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .links>a {
+        .links>a{
             text-decoration: none;
             font-size: 2.5rem;
             line-height: 50px;
         }
+        .links>a:link{
+            color: crimson;
+
+        }
+        .links>a:visited{
+            color: aqua;
+        }
+        .links>a:active{
+            color: blue;
+        }
+        button{
+            margin-left: 30%;
+            padding: 18px 102px;
+            font-weight: 600;
+            border: none;
+            background: linear-gradient(30deg,lightblue,indigo);
+            border-radius: 10px;
+            outline: white 3px solid;
+            outline-offset: -8px;
+        }
+
+        button:active{
+            transform: scale(0.95);
+            transition: all 100ms linear;
+        }
+
+        .links>a:hover{
+            font-size: 5rem;
+            font-family: "Poppins", sans-serif;
+            color: rgb(221,221,255);
+            font-weight: 500;
+            text-shadow: 5px 3px 0px black;
+            letter-spacing: 10px;
+            transition: all 200ms ease-in-out ;
+        }
+        button:hover{
+            background: linear-gradient(30deg, indigo,lightblue);
+            outline: 3px indigo solid;
+            outline-offset: 6px;
+            transition: all 300ms ease-in-out;
+        }
+
     </style>
 </head>
 <body>
     <div class="links">
-     <a href="https://qspiders.com/branches/btm-jspiders?branchId=8-branchId">Jspiders</a>
-    <a href="https://www.google.com">Google</a>
-     <a href="https://www.youtube.com">YouTube</a>
-    <a href="https://www.instagram.com">Instagram</a>
-    <a href="https://www.facebook.com">Facebook</a>
-    <a href="https://www.snapchat.com">Snapchat</a>
-    <a href="https://www.linkedin.com">LinkedIn</a>
-    <a href="https://www.Telegram.com">Telegram</a>
-    </div>
+    <a href="https://qspiders.com/branches/btm-jspiders?branchId=8-branchId">Jspiders</a><br>
+    <a href="https://www.google.com/">Google</a><br>
+    <a href="https://www.youtube.com/">Youtube</i></a><br>
+    <a href="https://www.instagram.com/?hl=en">Instagram</a><br>
+    <a href="https://www.facebook.com/">Facebook</a><br>
+    <a href="https://www.snapchat.com/">Snapchat</a><br>
+    <a href="https://www.linkedin.com/feed">LinkedIn</a><br>
+    <a href="https://web.telegram.org/">Telegram</a><br>
+</div>
+<button>Click Here</button>
+<br>
+<hr>
+<!-- 
+     Pseudo-class:
+       - Pseudo classes are used to change the state of whole HTML element.
+       - Can change the state of elements on the basis of links availability, user interaction, postion of
+       element on the DOM and more.
+       - Syntax:
+           selector:pseudo-class{
+              cs prop
+           }
+       - Types:
+          1. link : To change the state of unvisited links on the web page.
+          2. visited : to change the status of visited links.
+          3. active : To change the status of active links When user click and hold on link.
+          4.hover : To change the state of HTML element, when user takes cursor over it.
+          5.focus: To change the state of HTML element (most likely input) when element gets focus
+          // both hover and focus used for user interaction 
+-->
+      <style>
+        input{
+            height: 35px;
+            width: 350px;
+            border: 2px solid;
+            /* border-color: transparent transparent red transparent */
+            margin-left: 40%;
+            outline: none;
+            font-size: 1.2rem;
+            padding-left: 20px;
+        }
+        input:focus{
+        /* border-color: transparent transparent limegreen transparent */
+        border: limegreen;
+        box-shadow: 0px 0px 20px 3px rgba(50,205,50,0.777);
+        }
+      </style>
+      <input type="text" name="" id="" placeholder="Type here.....">      
 </body>
 </html>
