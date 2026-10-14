@@ -90,7 +90,7 @@
           9.nth-child(evem/odd): Selects only even/odd numbered element
 -->
       <style>
-        input{
+        #user-inp{
             height: 35px;
             width: 350px;
             border: 2px solid;
@@ -107,7 +107,7 @@
         }
         
       </style>
-      <input type="text" name="" id="" placeholder="Type here.....">     
+      <input type="text" name="" id="user-inp" placeholder="Type here.....">     
 
       <!--First child -->
       <style>
@@ -258,7 +258,37 @@
             <span>This is span</span>
         </div>
 
+        <hr color="red">
+        <!--checked-->
+
+        <style>
+            input[type="checkbox"]:checked{
+                accent-color: lime;
+                height: 15px;
+                width: 15px;
+            }
+
+            input[type="checkbox"]:checked+label{
+                color: lime;
+            }
+        </style>
+
+        <p>Choose Your skills</p>
+        <input type="checkbox" name="" id=""><label for="">Java</label>
+       <input type="checkbox" name="" id=""><label for="">JDBC</label>
+        <input type="checkbox" name="" id=""><label for="">Hibernate</label>
+       <input type="checkbox" name="" id=""><label for="">SpringBoot</label>
+      <input type="checkbox" name="" id=""><label for="">JavaScript</label>
+      <input type="checkbox" name="" id=""><label for="">SQL</label>
+        <input type="checkbox" name="" id=""><label for="">ReactJS</label>
+
      <pre>
+
+
+
+
+
+
 
 
 
