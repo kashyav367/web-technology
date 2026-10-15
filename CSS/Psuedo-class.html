@@ -88,6 +88,10 @@
           7.last-child: Selects last element from selected selector.
           8.nth-child(): Selects elements based on the number
           9.nth-child(evem/odd): Selects only even/odd numbered element
+          10.has() : It selects CSS prop to parent element based on child.
+          11.not() : It excludes selected html element from applying the CSS prop.
+          12.checked : Select an html element, when user checked radio button and  checkbox.
+          13.root : It is used to select root element, can create css variables
 -->
       <style>
         #user-inp{
@@ -149,6 +153,28 @@
         <style>
 
             @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            :root {
+                --primary-text-color: lime;
+                --main-heading-font-size: 5rem;
+                --shadow-text: 5px 3px 5px black;
+            }
+
+            .links>a{
+                text-decoration: none;
+                font-size: 2.5rem;
+                line-height: 50px;
+            }
+
+            .links>a:link{
+                color:red;
+            }
+
+            .links>a:visited{
+                color: var(--primary-text-color)
+            }
+
+
 
              *{
                 font-family: "Poppins", sans-serif;
@@ -276,11 +302,11 @@
         <p>Choose Your skills</p>
         <input type="checkbox" name="" id=""><label for="">Java</label>
        <input type="checkbox" name="" id=""><label for="">JDBC</label>
-        <input type="checkbox" name="" id=""><label for="">Hibernate</label>
+       <input type="checkbox" name="" id=""><label for="">Hibernate</label>
        <input type="checkbox" name="" id=""><label for="">SpringBoot</label>
-      <input type="checkbox" name="" id=""><label for="">JavaScript</label>
-      <input type="checkbox" name="" id=""><label for="">SQL</label>
-        <input type="checkbox" name="" id=""><label for="">ReactJS</label>
+       <input type="checkbox" name="" id=""><label for="">JavaScript</label>
+       <input type="checkbox" name="" id=""><label for="">SQL</label>
+       <input type="checkbox" name="" id=""><label for="">ReactJS</label>
 
      <pre>
 
