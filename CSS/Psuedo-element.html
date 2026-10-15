@@ -45,6 +45,41 @@
           color: springgreen;
         }
 
+        .second{
+            display: inline;
+            position: relative;
+            margin-left: 15%;
+            background: linear-gradient(25deg, lime, gold, indigo, cyan, magenta, lavenderblush, red);
+            background-clip: text;
+            color:transparent
+        }
+
+        .second::before{
+            content: "I 🩷";
+        }
+
+        .second::after{
+            content: "";
+            height: 8px;
+            width: 0px;
+            background: linear-gradient(25deg , lime, gold, indigo, cyan, magenta, lavenderblush, red);
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* width : 100*/
+            /* transform : scaleX(0) */
+        }
+
+        .second:hover::after{
+            width:100%;
+            transition: all 1000ms ease-in-out;
+            /*transform : scaleX(1); */
+        }
+
+        
+
+
 
     </style>
 </head>
@@ -53,5 +88,43 @@
     div.wrap#box{This is box} -->
     <h1 class="heading">Ankit</h1>
     <p class="primary-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, perferendis adipisci, architecto inventore odio blanditiis temporibus, esse vel quasi ducimus fugiat velit. Suscipit laborum iure culpa aliquid saepe provident ratione labore? Doloribus atque tenetur voluptatem, tempore magni ab, accusamus nesciunt quis fugit corrupti eaque alias, autem repudiandae dignissimos architecto saepe.</p>
+
+    <div class="heading second">Jspiders</div>
+
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </pre>
 </body>
 </html>
