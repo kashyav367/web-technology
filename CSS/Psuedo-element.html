@@ -76,9 +76,36 @@
             transition: all 1000ms ease-in-out;
             /*transform : scaleX(1); */
         }
-
         
+        /* p::selection {
+            background-color: peru;
+            color: black;
+        } */
 
+         ::selection {
+            background-color: peru;
+            color: black;
+        }
+        li::marker{
+            content: "->";
+        }
+
+        input[type="text"]{
+            background-color: #f8f8ffb9;
+            border: 0.5px solid beige;
+            outline: none;
+            margin-left: 20%;
+            margin-top: 5%;
+            height: 35px;
+            width: 350px;
+        }
+
+        input[type="text"]::placeholder{
+            color: rgba(0,255,255,0.458);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        
 
 
     </style>
@@ -90,7 +117,23 @@
     <p class="primary-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, perferendis adipisci, architecto inventore odio blanditiis temporibus, esse vel quasi ducimus fugiat velit. Suscipit laborum iure culpa aliquid saepe provident ratione labore? Doloribus atque tenetur voluptatem, tempore magni ab, accusamus nesciunt quis fugit corrupti eaque alias, autem repudiandae dignissimos architecto saepe.</p>
 
     <div class="heading second">Jspiders</div>
+    <hr>
+   <ul>
+   <li>item</li>
+    <li>item</li>
+     <li>item</li>
+      <li>item</li>
+       <li>item</li>
+        <li>item</li>
+         <li>item</li>
+          <li>item</li>
+           <li>item</li>
+            <li>item</li>
+    </ul>
+    <hr>
 
+    <input type="text" name="" id=""  
+     placeholder="Start typing here..." >
     <pre>
 
 

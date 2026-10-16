@@ -116,4 +116,67 @@
         * Types: 
             1.link : To change the state of unvisited links on the web page.
             2.visited : To change the status of visited links.
-            3.active : To change the status of active links(When user click and hold on link)                                   
+            3.active : To change the status of active links(When user click and hold on link)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       --------------------------------------------------------------------------------------------------
+
+       ======
+       * Psuedo-element
+           -> Psuedo elements are used to apply the css prop, by selecting an element part by part
+           -> Syntax:
+                selector::psuedo-element{
+                    css prop
+                }
+           -> Types:
+                1.first-letter: Selects only first letter from selected text element
+                2.first-line : Selects only first line from selected text element.
+                3.before: Adds an content before the selected element.
+                4.after: Adds an content after the selected element.
+                5.selection: Apply the css property When user drag and selects content   
+                             in web page.
+                6.marker : Used to add custom marker to unordered list.
+                7.placeholder: Used to modify only placeholder in input.                   
+
+
+
+
+       --------------------------------------------------------------------------------------------------
+
+       => Display
+         -> Defines Displaying behavior of an html element
+
+         -> Syntax: 
+                Selector{
+                    Display:____;
+                }
+
+         -> Types:
+              1.block
+              2.None
+              3.Inline
+              4.Inline-block
+              5.Flex
+              6.Grid
+
+         * Block:
+            -> Default prop for some HTML elements
+            -> Consumer whole width of window
+            -> Always start with newline.
+            -> Accepts width and height
+            -> Ex: all heading p,div,li  
+            -> Used with Sections, paragraphs and container             
