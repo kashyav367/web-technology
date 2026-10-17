@@ -179,4 +179,16 @@
             -> Always start with newline.
             -> Accepts width and height
             -> Ex: all heading p,div,li  
-            -> Used with Sections, paragraphs and container             
+            -> Used with Sections, paragraphs and container   
+
+         * Inline 
+         -> Mokes element as align in same line
+         -> Height and width won't effects
+         -> Default for some HTML elements
+         -> Ex: Character formatting tags, img, video
+         a,form elements ......
+
+
+         * Inline-block
+         -> Element as inline-level
+         -> Height & width will have effect              
