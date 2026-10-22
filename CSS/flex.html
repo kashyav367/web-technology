@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+      body{
+        background-color: burlywood;
+      }
+
+      *{
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper{
+        height: 70vh;
+        width: 75%;
+        background-color: thistle;
+        display: flex;
+      }
+
+      .wrapper >.item{
+        height: 140px;
+        width: 140px;
+        background-color: aliceblue;
+        box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.585) inset;
+      }
+
+      .wrapper >.item:first-child{
+        background-color: blue;
+      }
+      .wrapper >.item:nth-child(2){
+        background-color: red;
+      }
+      .wrapper >.item:nth-child(3){
+        background-color: yellowgreen;
+      }
+      .wrapper >.item:nth-child(4){
+        background-color: blueviolet
+      }
+
+    </style>
+</head>
+<body>
+     <!--
+       flex
+       -- Stands for flexible box
+       -- It makes element as inline-level block container
+       -- Handles the element in row-wise or col-wise 
+           so it is one-dimensional.
+       -- Creates a relation ship of parent - child and wraps all child elements within it
+       -- Mainly used in maintaining spaces 
+       -- and to make web page as responsive     
+     -->
+
+      <div class="wrapper">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>     
+</body>
+</html>
