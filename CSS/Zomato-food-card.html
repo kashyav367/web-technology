@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+             *{
+                font-family: "Poppins", sans-serif;
+                box-sizing: border-box;
+                margin: 0;
+             }
+
+             .food-prods {
+                height: 50vh;
+                background-color: #F5EFE3;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                align-items: center;
+                row-gap:40px;
+             }
+
+             .food-prods .item{
+                height: 90%;
+                width: 350px;
+                background-color: white;
+                border-radius: 20px;
+            
+
+            img{
+                width: 95%;
+                border-radius: 18px;
+                height: 200px;
+                object-fit: cover;
+                margin-left: 8px;
+             }
+
+             .in-stock{
+                color: green;
+             }
+
+             .out-stock{
+                color: orangered;
+             }
+             }
+
+             .food-prods .item:hover{
+                box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.254);
+                cursor: pointer;
+             }
+
+             .food-prods .item>h3{
+                font-weight: 500;
+                font-style: normal;
+             }
+
+             .food-prods h3,
+             p,
+             span{
+                margin-left: 10px;
+             }
+
+             .food-prods .item:has(.out-stock){
+                filter: grayscale(100%);
+                opacity: 0.5;
+
+                :hover{
+                    cursor: not-allowed;
+                }
+             }
+        </style>
+        <div class="food-prods">
+            <div class="item">
+            <img src="https://b.zmtcdn.com/data/pictures/5/21367055/e30a2ac9b8045c4b87639a13c9ed9545_o2_featured_v2.jpg" alt="Coffee">
+            <h3>The Filter Coffee</h3>
+            <p>South Indian, Coffee</p>
+            <span class="in-stock">Available</span>
+        </div>
+
+           <div class="item">
+            <img src="https://b.zmtcdn.com/data/dish_photos/f80/a6bdee50ef7f23c6b1ba13f35c5f7f80.jpg?output-format=webp" alt="Cake">
+            <h3>Theobroma</h3>
+            <p>Bakery, Desserts, Fast-food Bevarages</p>
+            <span class="out-stock">Not Available</span>
+           </div>
+
+            
+           <div class="item">
+            <img src="https://b.zmtcdn.com/data/dish_photos/07a/afb84cfeccfa8a82fb0100fbbc6be07a.jpg?output-format=webp" alt="dosa">
+            <h3>dosa</h3>
+            <p> Fast-food Bevarages</p>
+            <span class="in-stock"> Available</span>
+        </div>
+        </div>
+
+</body>
+</html>
