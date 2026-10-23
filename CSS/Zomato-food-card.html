@@ -19,13 +19,14 @@
              }
 
              .food-prods {
-                height: 50vh;
+                min-height: 50vh;
                 background-color: #F5EFE3;
                 display: flex;
+                align-items: center;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-                align-items: center;
-                row-gap:40px;
+                padding: 20px;
+                row-gap:20px;
              }
 
              .food-prods .item{
@@ -33,8 +34,11 @@
                 width: 350px;
                 background-color: white;
                 border-radius: 20px;
-            
-
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                padding: 10px;
             img{
                 width: 95%;
                 border-radius: 18px;
@@ -51,6 +55,20 @@
                 color: orangered;
              }
              }
+
+             .food-prods .prod-img{
+                width: 99%;
+                height: 200px;
+                border-radius: 18px;
+                overflow: hidden;
+             }
+
+             .food-prods .prod-img img:hover{
+                transform: scale(1.2);
+                transition: all 500ms linear;
+             }
+
+
 
              .food-prods .item:hover{
                 box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.254);
@@ -79,14 +97,18 @@
         </style>
         <div class="food-prods">
             <div class="item">
-            <img src="https://b.zmtcdn.com/data/pictures/5/21367055/e30a2ac9b8045c4b87639a13c9ed9545_o2_featured_v2.jpg" alt="Coffee">
+             <div class="prod-img">
+               <img src="https://b.zmtcdn.com/data/pictures/5/21367055/e30a2ac9b8045c4b87639a13c9ed9545_o2_featured_v2.jpg" alt="Coffee">
+             </div>   
             <h3>The Filter Coffee</h3>
             <p>South Indian, Coffee</p>
             <span class="in-stock">Available</span>
         </div>
 
            <div class="item">
+              <div class="prod-img">
             <img src="https://b.zmtcdn.com/data/dish_photos/f80/a6bdee50ef7f23c6b1ba13f35c5f7f80.jpg?output-format=webp" alt="Cake">
+            </div>
             <h3>Theobroma</h3>
             <p>Bakery, Desserts, Fast-food Bevarages</p>
             <span class="out-stock">Not Available</span>
@@ -94,7 +116,9 @@
 
             
            <div class="item">
+              <div class="prod-img">
             <img src="https://b.zmtcdn.com/data/dish_photos/07a/afb84cfeccfa8a82fb0100fbbc6be07a.jpg?output-format=webp" alt="dosa">
+            </div>
             <h3>dosa</h3>
             <p> Fast-food Bevarages</p>
             <span class="in-stock"> Available</span>
