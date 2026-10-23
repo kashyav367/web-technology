@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            height: 70vh;
+            width: 75%;
+            background-color: thistle;
+            display: flex;
+
+            /* flex-properties */
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+   
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+
+            justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: center;
+
+            /* column-gap: 5px;
+            row-gap: 5px; */
+            gap: 10px;
+        }
+
+        .wrapper>.item {
+            height: 140px;
+            width: 140px;
+            background-color: aliceblue;
+            box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.585) inset;
+            font-size: 2.3rem;
+        }
+
+        .wrapper>.item:first-child {
+            background-color: blueviolet;
+        }
+
+        .wrapper>.item:nth-child(2) {
+            background-color: yellow;
+        }
+
+        .wrapper>.item:nth-child(3) {
+            background-color: rgb(0, 213, 255);
+        }
+
+        .wrapper>.item:nth-child(4) {
+            background-color: rgb(255, 0, 136);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <hr>
+    <style>
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-color: tan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main>.sub-main {
+            height: 60%;
+            width: 35%;
+            background-color: white;
+        }
+
+        .main .part {
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .main .bottom {
+            background-color: cadetblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .main .bottom>.item {
+            height: 80%;
+            width: 46%;
+            background-color: springgreen;
+        }
+    </style>
+    <div class="main">
+        <div class="sub-main">
+            <div class="part top"></div>
+            <div class="part bottom">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
