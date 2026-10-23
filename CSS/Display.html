@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* h1:hover{
+        /* body {
+            background-color: gainsboro;
+        }
+
+        /* h1 {
             background-color: blueviolet;
             color: burlywood;
             text-transform: uppercase;
@@ -15,124 +20,123 @@
         h2{
             background-color: burlywood;
             color: blueviolet;
-        } */
-         .model{
-          height: 300px;
-          width: 450px;
-          border-radius: 15px;
-          box-shadow: 0px 0px 10px 5px rgba(0,0,0, 0.343),0px 0px 10px 5px rgba(0, 0, 0, 0.543) inset;
-          background-color: rgb(188,188,188);
-          margin: auto;
-          margin-top: 12%;
-         box-sizing: border-box;
-         padding: 8% 0 0 10%;
-         /* display: none; */
-         }
+        } 
+        .model {
+            height: 300px;
+            width: 450px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.343), 0px 0px 10px 5px rgba(0, 0, 0, 0.543) inset;
+            background-color: rgb(188, 188, 188);
+            margin: auto;
+            margin-top: 12%;
+            box-sizing: border-box;
+            padding: 8% 0 0 10%;
+            display: none;
+        }
 
-         button{
+        button {
             height: 30px;
             width: 100px;
             margin-left: 15px;
-         }
+        }
 
-         .container{
+        .container {
             height: 300px;
             width: 300px;
-            box-shadow: 0px 0px 10px 5px rgba(0,0, 0, 0.343), 0px 0px 10px 5px 
-            rgba(0, 0, 0, 0.543) inset;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.343), 0px 0px 10px 5px rgba(0, 0, 0, 0.543) inset;
             background-color: antiquewhite;
             display: inline;
             padding: 50px 150px;
-         }
+        }
 
-         a{
+        a {
             display: block;
-         }
+        }
 
-         .wrapper-section{
+        .wrapper-section {
             height: 300px;
             width: 300px;
-            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.343),0px 0px 10px 5px
-            rgba(0,0,0,0.543) inset;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.343), 0px 0px 10px 5px rgba(0, 0, 0, 0.543) inset;
             background-color: antiquewhite;
             display: inline-block;
-         }
+        } */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-         .Box{
-            height: 60px;
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .category {
+            height: 80px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .category>.item {
+            height: 80%;
             width: 200px;
-            background-color: antiquewhite;
+            background-color: rgba(128, 128, 128, 0.435);
             display: inline-block;
+            margin-top: 7px;
+            margin-left: 30px;
+            border-radius: 15px;
+        }
+
+        .category p,
+        span {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
             text-align: center;
-            padding-top: 25px;
-            margin: 10px;
-            margin-left: 12px;
-            border-radius: 10px;
-         }
+            padding-top: 14px;
+        }
 
-         #neu{
-            background-color: rgba(18, 18, 65, 0.792) ;
-            color: white;
-         }
-
-         #Ayur{
-            background-color: rgba(10, 115, 10, 0.377);
-            color: aliceblue;
-         }
-
+        .category img {
+            height: 90%;
+        }
     </style>
 </head>
+
 <body>
     <!-- <h1>web technology</h1>
     <h2>Java Full Stack Development</h2> -->
-    <div class="model" id="box">
+    <!-- <div class="model" id="box">
         <p>Unknown error found</p>
-        <button>close</button>
+        <button>Close</button>
     </div>
     <hr> <br><br><br><br>
     <div class="container">Box-1</div>
-    <div class="container">Box-2</div>
-    <br><br><br><br>
+    <div class="container">Box-2</div> <br><br><br><br>
     <a href="">Link 2</a>
     <a href="">Link 1</a>
+    <hr>
+    <div class="wrapper-section">Box-1</div>
+    <div class="wrapper-section">Box-2</div> -->
 
-    <hr><br><br><br>
-
-    <div class="bigBox">
-        <div class="Box" class="comBox">EGGS,MEATS AND FISH</div>
-        <div class="Box" id="neu">
-         <img src="https://www.youtube.com/@tataneuofficial/videos" alt="NeuPass Logo">
-         NEUPASS
-       </div>
-        <div class="Box" id="Ayur">AYURVEDA</div>
-        <div class="Box" class="comBox" >BUY MORE SAVE MORE</div>
-        <div class="Box"  class="comBox">DEALS OF THE WEEK</div>
-        <div class="Box"  class="comBox">COMBO STORE</div>
+    <div class="category">
+        <div class="item">
+            <p>eggs,meat and fish</p>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0FgZFXa1fWeTcoq9-EoM9m7fsapjE51ZI3SB-x1Vvew&s"
+                alt="">
+            <span>neu<span>pass</span></span>
+        </div>
+        <div class="item">
+            <p>ayurveda</p>
+        </div>
+        <div class="item">
+            <p>buy more save more</p>
+        </div>
+        <div class="item">
+            <p>deals of the week</p>
+        </div>
+        <div class="item">
+            <p>combo store</p>
+        </div>
     </div>
-
-    <pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </pre>
-
 </body>
 
-
 </html>
-

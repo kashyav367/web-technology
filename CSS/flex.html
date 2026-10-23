@@ -6,7 +6,7 @@
     <title>flexbox</title>
 
     <style>
-      /* body{
+       body{
         background-color: burlywood;
       }
 
@@ -16,10 +16,19 @@
       }
 
       .wrapper{
-        height: 70vh;
+        height: 100vh;
         width: 75%;
         background-color: thistle;
         display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        justify-content: space-evenly; 
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+
+        /* Works only with flex wrap*/
+        align-content: space-evenly;     
+
       }
 
       .wrapper >.item{
@@ -32,19 +41,32 @@
 
       .wrapper >.item:first-child{
         background-color: blue;
+        order: 3;
       }
       .wrapper >.item:nth-child(2){
         background-color: red;
+        order:4;
       }
       .wrapper >.item:nth-child(3){
         background-color: yellowgreen;
+        order: 1;
+        /* flex-shrink: 2; */
       }
       .wrapper >.item:nth-child(4){
-        background-color: blueviolet
-      } */
+        background-color: blueviolet;
+        order: 2;
+        /* flex-grow: 1; */
+      } 
 
+      .two {
+        background-color: yellow;
+      }
 
-      .main{
+      .wrapper >.item:hover{
+        flex-grow: 1;
+      }
+
+      /* .main{
         background-color: cadetblue;
         height:100vh;
         width:100%;
@@ -76,7 +98,7 @@
         height: 80%;
         width: 46%;
         background-color: springgreen;
-     }
+     } */
 
     </style>
 </head>
@@ -116,25 +138,14 @@
        --  row-gap : 5px;
      -->
 
-      <!-- <div class="wrapper">
+      <div class="wrapper">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
-      </div>   
+      </div> 
       
-      <hr> -->
-
-
-      <div class="main">
-        <div class="sub-main">
-            <div class="part-top"></div>
-            <div class="part-bottom"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-      </div>
+      <div class="wrappertwo"></div>
 
 </body>
 </html>
-
