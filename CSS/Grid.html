@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documl</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    section{
+        height: 100vh;
+        width: 100%;
+        background-color: lavender;
+        display: grid;
+
+        /* grid-template-columns: 200px 300px auto ;
+        grid-template-rows: 200px 300px auto; */
+
+         /* grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto; */
+
+        /* grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr) */
+        
+         grid-template-columns: 230px auto auto ;
+        grid-template-rows: 60px auto 300px;
+     
+        align-items: center;
+
+    }
+
+    section>.page-section{
+        height: 100%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    section>.page-section:nth-child(1){
+        background-color: yellowgreen;
+         grid-column: 1/4;
+        grid-row: 1/2;
+    }
+     section>.page-section:nth-child(2){
+        background-color: magenta;
+         grid-column: 1/2;
+        grid-row: 2/3;
+    }
+     section>.page-section:nth-child(3){
+        background-color: lime;
+         grid-column: 2/4;
+        grid-row: 2/3;
+    }
+     section>.page-section:nth-child(4){
+        background-color: lightseagreen;
+        /* grid-column-start: 3;
+        grid-column-end: 4; */
+        /* grid-column: 2/3; */
+
+        /* grid-row-start: 3;
+        grid-row-end : 4; */
+        /* grid-row: 4/3; */
+
+        grid-column: 1/4;
+        grid-row: 3/4;
+
+    }
+
+    .inner-parent{
+        height: 500px;
+        width:80%;
+        background-color: darkgray;
+    }
+
+    .inner-parent>.item{
+      height: 100px;
+      width: 100px;
+      box-shadow: 0px 0px 7px 3px black inset;
+    }    
+    
+</style>
+<body>
+    <section>
+        <nav class="page-section">Navigation</nav>
+        <aside class="page-section">Side menu</aside>
+        <main class="page-section">
+            <div class="inner-parent"></div>
+            Main content</main>
+        <footer class="page-section">Footer</footer>
+    </section>
+</body>
+</html>
