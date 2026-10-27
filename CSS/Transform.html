@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+     Transform 
+     > Transform is used to transform an html element into 2D or 3D.
+     > We can rotate, resize, bend and drag element based on X,Y and Z - axis.
+     > Types
+       1. Rotate() - Used to rotate an HTML element along  
+       2. Scale()
+       3. Skew()
+       4. Translate()
+     Transition 
+     > Change in the CSS property over given of time.
+     > Transition: transition-property duration timing-function delay;
+    
+    -->
+       <style>
+          .parent {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            background-color: gray;
+          }
+          .parent>.card{
+            height: 300px;
+            width: 300px;
+            background-color: brown;
+            border: 1px black solid;
+            transition: transform 5s linear;
+          }
+          .card:nth-child(1):hover{
+             transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            /* transform: rotateY(360deg);
+             transform: rotateZ(360deg); */
+            
+          }
+          .card:nth-child(2):hover{
+            transform: scaleX(1.3);
+            transform: scaleY(1.3);
+            transform: scale(1.3);
+          }
+       </style>
+       <div class="parent">
+           <div class="card"></div>
+           <div class="card"></div>
+       </div>
+</body>
+</html>

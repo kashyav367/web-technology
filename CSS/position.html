@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+
+            height: 80vh;
+            width: 80%;
+            background-color: violet;
+
+        }
+        .two {
+            background-color: aqua;
+        }
+        .wrapper>.item {
+            height: 150px;
+            width: 150px;
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.731) inset;
+            display: grid;
+            place-items: center;
+            color: snow;
+            font-size: 1.6rem;
+        }
+        .item:nth-child(1){
+            background-color: lightcoral ;
+            position: static;
+            top: 200px;
+            left: 300px;
+        }
+        .item:nth-child(2){
+            background-color: darkred ;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .item:nth-child(3){
+            background-color: thistle ;
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        .item:nth-child(4){
+            background-color: olivedrab ;
+            position: sticky;
+            top: 200px;
+        }
+        .item:nth-child(5){
+            background-color: pink;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Position Property:
+     -> Defines positioning method to an html element.
+     -> "Static" is default for any html elements.
+     -> Absolute:
+       - Position of an element with respect to  its ancestor element/ root element.
+       - Element starts from top '0' & left '0'.
+       - Element starts floating & loose existance from its parent element.
+     -> Relative:
+       - Position of an element with respect to its original position.
+       - When we want smaller changes in the position then this property should be used.
+     -> sticky:
+       - Position of an element with respect to its parent element in sticked position.
+       - Element will be always present in parent element.
+     -> Fixed:
+       - Postion of an element with respect to window in fixed condition. 
+
+    -->
+    <div class="wrapper one">
+        <div class="item">Static</div>
+        <div class="item">Absolute</div>
+        <div class="item">relative</div>
+        <div class="item">Sticky</div>
+        <div class="item">Fixed</div>
+
+    </div>
+    <div class="wrapper two"></div>
+</body>
+</html>
