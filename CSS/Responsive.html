@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            min-height: 100vh;
+            width: 100%;
+            background-color: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .wrapper>.cards{
+            height: 300px;
+            width: 280px;
+            background-color: aqua;
+        }
+
+        /*Mobile Device */
+        @media screen and (max-width:425px){
+            .wrapper{
+                background-color: black;
+                flex-direction: column;
+                gap:30px;
+                padding: 20px 0px;
+            }
+
+            .wrapper>.cards{
+                background-color: aliceblue;
+            }
+        }
+
+        /* Tablet Device */
+        @media screen and (min-width:425px) and (max-width:769px){
+            .wrapper{
+                background-color: lightcoral;
+                flex-wrap: wrap;
+                gap:30px
+            }
+
+            .wrapper>.cards{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+    </div>
+</body>
+</html>
